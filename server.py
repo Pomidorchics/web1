@@ -17,14 +17,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
     server.listen()
     connection, address = server.accept()
     with connection:
-        print(f'Connected by {address}')
+        print(f'{address}')
         while True:
             data = connection.recv(1024)
             connection.sendall(data)
-            print(f'Recieved: {data.decode()}')
+            print(f'{data.decode()}')
             window = Tk()
-            window.title = "fghtrd"
-            window.geometry('50x50')
+            window.title = "кнопка"
+            window.geometry('300x50')
             btn = Button(window, text="Нажмите, чтобы открыть новую картинку", command=clicked)
             btn.grid(column=0, row=0)
             window.mainloop()
