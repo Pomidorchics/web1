@@ -8,7 +8,7 @@ IND = 0
 
 def clicked():
     global IND
-    IND = (IND + 1) % 4
+    IND = (IND + 1) % 7
     connection.sendall(f'{IND}'.encode('utf-8'))
 
 
