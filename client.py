@@ -4,7 +4,7 @@ import socket
 
 HOST = "172.20.10.3"
 PORT = 40810
-IMAGES = ["images/img1.png", "images/img2.png", "images/img3.png", "images/img4.png"]
+IMAGES = ["images/img1.png", "images/img2.png", "images/img3.png", "images/img4.png", "images/img5.png", "images/img6.png", "images/img7.png"]
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
     client.connect(("localhost", PORT))
